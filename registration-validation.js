@@ -37,22 +37,21 @@ function formValidation()
 
     /************************* Student ID *************************/
     
-        var reg=/^[a-zA-Z]+$/;
-        var name=document.fname.id.value;
-        
-        if (name=="") {
-            document.getElementById('error_field').innerHTML="Type Your ID";
-            document.fname.id.focus();
-        }
-        else if(reg.test(name)!=true) {
-            document.id('error_field').innerHTML="Only Characters";
-            document.fname.firstname.focus();
-        }
-        else {
-            document.getElementById('error_field').innerHTML="ok";
-        } 
+      var reg = /^[0-9]+$/;
+            var name = document.fname.id.value;
+            var errorField = document.getElementById('error_field');
 
-
+            if (name === "") {
+                errorField.innerHTML = "Type Your ID";
+                document.fname.id.focus();
+            }
+            else if (!reg.test(name)) {
+                errorField.innerHTML = "Only Numbers are allowed";
+                document.fname.id.focus();
+            }
+            else {
+                errorField.innerHTML = "ok";
+            }
 
 
 
@@ -65,7 +64,7 @@ function formValidation()
 
         /************************* Semester *************************/
 
-            var reg=/^[a-zA-Z]+$/;
+           var reg=/^[a-zA-Z]+$/;
             var name=document.fname.smester.value;
             
             if (name=="") {
@@ -93,21 +92,20 @@ function formValidation()
         
             /************************* Batch *************************/
 
-            var reg=/^[a-zA-Z]+$/;
-            var name=document.fname.batch.value;
-            
-            if (name=="") {
-                document.getElementById('error_batch').innerHTML="Batch Name";
-                document.fname.batch.focus();
-            }
-            else if(reg.test(name)!=true) {
-                document.getElementById('error_batch').innerHTML="Only Characters";
-                document.fname.batch.focus();
-            }
-            else {
-                document.getElementById('error_batch').innerHTML="ok";
-            }
-      
+           var reg = /^[0-9]+$/; // Use a regular expression that matches one or more digits
+
+var name = document.fname.batch.value;
+
+if (name === "") {
+    document.getElementById('error_batch').innerHTML = "Batch Name";
+    document.fname.batch.focus();
+} else if (!reg.test(name)) {
+    document.getElementById('error_batch').innerHTML = "Only Numbers";
+    document.fname.batch.focus();
+} else {
+    document.getElementById('error_batch').innerHTML = "OK";
+}
+
  
 
 
@@ -119,21 +117,22 @@ function formValidation()
 
       
                /************************* Department *************************/
+var reg = /^[a-zA-Z\s]+$/; // Use a regular expression that matches one or more characters and a single space
 
-               var reg=/^[a-zA-Z]+$/;
-               var name=document.fname.department.value;
-               
-               if (name=="") {
-                   document.getElementById('error_department').innerHTML="Department Name";
-                   document.fname.department.focus();
-               }
-               else if(reg.test(name)!=true) {
-                   document.getElementById('error_department').innerHTML="Only Characters";
-                   document.fname.department.focus();
-               }
-               else {
-                   document.getElementById('error_department').innerHTML="ok";
-               }
+var name = document.fname.department.value;
+
+if (name === "") {
+    document.getElementById('error_department').innerHTML = "Department Name";
+    document.fname.department.focus();
+} else if (!reg.test(name)) {
+    document.getElementById('error_department').innerHTML = "Only Characters and Single Space";
+    document.fname.department.focus();
+} else {
+    document.getElementById('error_department').innerHTML = "OK";
+}
+
+
+
 
 
 
@@ -148,21 +147,21 @@ function formValidation()
 
                 /************************* Contact *************************/
 
-              var reg=/^[a-zA-Z]+$/;
-              var name=document.fname.contact.value;
-              
-              if (name=="") {
-                  document.getElementById('error_contact').innerHTML="Contact Address";
-                  document.fname.contact.focus();
-              }
-              else if(reg.test(name)!=true) {
-                  document.getElementById('error_contact').innerHTML="Only Characters";
-                  document.fname.contact.focus();
-              }
-              else {
-                  document.getElementById('error_contact').innerHTML="ok";
-              }
-      
+    var reg = /^[0-9]+$/; // Use a regular expression that matches one or more digits
+
+var name = document.fname.contact.value;
+
+if (name === "") {
+    document.getElementById('error_contact').innerHTML = "Contact Address";
+    document.fname.contact.focus();
+} else if (!reg.test(name)) {
+    document.getElementById('error_contact').innerHTML = "Only Numbers";
+    document.fname.contact.focus();
+} else {
+    document.getElementById('error_contact').innerHTML = "OK";
+}
+
+
 
 
 
@@ -278,6 +277,11 @@ function formValidation()
 
               
 }
+
+
+
+
+            
 
 
 
