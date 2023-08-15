@@ -1,0 +1,514 @@
+ /** Goolge Font **/
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+ /*** Css custom grid style **/
+
+ body {
+     font-family: 'Roboto', sans-serif;
+ }
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+}
+
+h2{
+    font-family: Ubuntu;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ .row{
+    width: 1300px;
+    margin: 0 auto;
+ }
+
+ .row::after {
+     content: "";
+     clear: both;
+     display: table;
+     
+ }
+
+ [class*="col-"] {
+     float: left;
+     padding: 15px;
+ }
+
+ /* For mobile phones: */
+ [class*="col-"] {
+     width: 100%;
+ }
+
+ @media (min-width: 320px) and (max-width: 767px) {
+
+    .row{
+        width: 400px;
+        margin: 0 auto;
+     }
+
+     /* For tablets: */
+     .col-s-1 {
+         width: 8.33%;
+     }
+
+     .col-s-2 {
+         width: 16.66%;
+     }
+
+     .col-s-3 {
+         width: 25%;
+     }
+
+     .col-s-4 {
+         width: 33.33%;
+     }
+
+     .col-s-5 {
+         width: 41.66%;
+     }
+
+     .col-s-6 {
+         width: 50%;
+     }
+
+     .col-s-7 {
+         width: 58.33%;
+     }
+
+     .col-s-8 {
+         width: 66.66%;
+     }
+
+     .col-s-9 {
+         width: 75%;
+     }
+
+     .col-s-10 {
+         width: 83.33%;
+     }
+
+     .col-s-11 {
+         width: 91.66%;
+     }
+
+     .col-s-12 {
+         width: 100%;
+     }
+
+     .single_language h2 {
+        width: 100%;
+    }
+    .page_tile h2 {
+        width: 100%;
+    }
+    
+    .single_language h2 {
+        width: 83%;
+    }
+    
+    .copy_right_p h3 {
+        font-size: 14px;
+    }
+ }
+
+ @media only screen and (min-width: 768px) {
+
+     /* For desktop: */
+     .col-1 {
+         width: 8.33%;
+     }
+
+     .col-2 {
+         width: 16.66%;
+     }
+
+     .col-3 {
+         width: 25%;
+     }
+
+     .col-4 {
+         width: 33.33%;
+     }
+
+     .col-5 {
+         width: 41.66%;
+     }
+
+     .col-6 {
+         width: 50%;
+     }
+
+     .col-7 {
+         width: 58.33%;
+     }
+
+     .col-8 {
+         width: 66.66%;
+     }
+
+     .col-9 {
+         width: 75%;
+     }
+
+     .col-10 {
+         width: 83.33%;
+     }
+
+     .col-11 {
+         width: 91.66%;
+     }
+
+     .col-12 {
+         width: 100%;
+     }
+ }
+
+
+
+ /*** logo arae **/
+
+ .logo_wrapper img {
+     width: 70px;
+ }
+
+ .logo_wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .logo_wrapper h2 {
+     font-size: 40px;
+     font-weight: bold;
+     text-transform: capitalize;
+     padding-left: 10px;
+     font-family: Ubuntu !important;
+ }
+
+
+/*** Navigation Area start **/
+
+#navigation_menu {
+    background: #181830; 
+}
+
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    line-height:60px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*** Main body -> Facutlty Member  **/
+
+#main_body {
+    margin: 30px 0;
+}
+
+.mis_vis_box {
+    background: #f6f6f6;
+    padding:20px;
+    margin-bottom: 30px;
+}
+
+.faculty_memebers h2 {
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom:20px;
+    font-family: 'Ubuntu';
+}
+
+.faculty_memebers_list {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+}
+
+.faculty_memebers_list h3 {
+    line-height: 40px;
+}
+
+.mis_vis_box h2 {
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom:20px;
+    font-family: 'Ubuntu';
+}
+
+/*** Copy Right ***/
+
+section#copy_right_area {
+    background: #181830;
+    color: #fff;
+}
+
+.copy_right_p h3 {
+    text-align: center;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/*** Learning Resource Page Style ***/
+.page_sub_title {
+    border-bottom: 3px solid #000;
+    border-bottom-style: dashed;
+    padding-bottom: 8px;
+}
+.page_tile h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    border-bottom: 4px solid #000;
+    padding-bottom: 10px;
+    width: 26%;
+    margin: 0 auto;
+    border-bottom-style: dashed;
+}
+
+.page_sub_title h3 {
+    position: relative;
+    padding-left: 40px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.page_sub_title h3:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #181830;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.single_language h2 {
+    font-size: 26px;
+    background: #181830;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 45px;
+    width: 20%;
+}
+
+.single_language ul {
+    margin: 0;
+    padding: 20px 20px;
+}
+
+.single_language ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*** Student Login page style **/
+
+.form_box {
+    background: #181830;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form_line label {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.form_line input {
+    width: 100%;
+    border: 0px;
+    line-height: 41px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.form_button input {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: inherit;
+    margin-top: 20px;
+}
+
+.form_line textarea {
+    width: 100%;
+    border: 0px;
+    line-height: 41px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+/*** Help Center **/
+.form_box h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.form_line.checkbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.form_line.checkbox input {
+    width: auto;
+}
+
+.form_line.checkbox label {
+    padding-left: 10px;
+}
+
+/** Blood Bank Page Style **/
+
+.form_box.bloodgrouplist {
+    width: 100%;
+}
+
+select#cars {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.blood_list ul li {
+    color: #181830;
+    background: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 50px;
+}
+
+.blood_list ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+/*** Skill Development **/
+
+.single_language.skill h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/** Landing page **/
+.landing_img img {
+    border: 10px solid #3d3232;
+    border-style: double;
+}
+
+.landing_img img {width: 100%;}
+
+.landing_details p {
+    padding-bottom: 20px;
+}
+
+.landing_list {
+    padding-left: 30px;
+}
+
+.landing_list ul li span {
+    font-weight: bold;
+}
+
+.landing_list ul li {
+    line-height: 40px;
+}
+
+/*** Form Validation ***/
+
+.validate {
+    color: red;
+    font-size: 12px;
+    position: relative;
+    top: -7px;
+}
+
+/*** About Us **/
+
+.about_team {
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+.about_team img {
+    width: auto;
+    height: 285px;
+}
+
+.about_team {text-align: center;}
+
+.about_team h2 {
+    font-weight: 100;
+    padding: 10px 0;
+}
+
+.about_team h3 span {
+    color: red;
+}
+
+.about_team p {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: bold;
+    line-height: 15px;
+    font-style: italic;
+}
+
+.about_team {
+    margin-top: 20px;
+}
+
+.page_tile.pages h2 {
+    width: 71%;
+}
+
+
+
+
+
+
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+}

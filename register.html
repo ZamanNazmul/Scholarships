@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Department of Information Technology </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- logo arae start here -->
+    <section id="logo_area">
+        <div class="row">
+            <div class="col-12">
+                <div class="logo_wrapper">
+                    <img src="./image/logo.png" alt="">
+                    <h2> University Of Information Technolgy And Sciences </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- logo arae end here -->
+
+
+    <!-- logo arae start here -->
+    <section id="logo_area">
+        <div class="row">
+            <div class="col-12">
+                <div class="logo_wrapper">
+              
+                    <h2> University Scholarships Portal </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- logo arae end here -->
+
+
+
+
+<!-- Navigation Area start here -->
+<section id="navigation_menu">
+    <div class="row">
+        <div class="col-12">
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="register.html" >Registration</a></li>
+                    <li><a href="student-login.html" >Student Login</a></li>
+                    <li><a href="learning-resource.html" >Scholarships</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Navigation Area start here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Learning Resource body area start here -->
+    <div id="main_body">
+
+        <!-- Page title here -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page_tile">
+                    <h2> Registration </h2>
+                </div>
+            </div>
+        </div>
+        <!-- Page title here -->
+
+        <!-- Student Login -->
+        <div class="row">
+            <div class="col-12">
+
+                <div class="form_box">
+
+                    <h3> Registration From </h3>
+
+                    <form action=""  name="fname">
+                        <div class="form_line">
+                            <label for="firstname">Name</label>
+                            <input type="text" name="name" placeholder="Your Name"> 
+                            <span id="error_name"  class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="id">ID</label>
+                            <input name="id" type="text" placeholder="Type your id here"> 
+                            <span id="error_field" class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="Semester">Semester</label>
+                            <input type="text" placeholder="Your Semester" name="smester">
+                            <span id="error_smester" class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="Batch">Batch</label>
+                            <input type="text" placeholder="Your Batch" name="batch">
+                            <span id="error_batch" class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="Department">Department</label>
+                            <input type="text" placeholder="Your Department" name="department">
+                            <span id="error_department" class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="Contact">Contact</label>
+                            <input type="text" name="contact" placeholder="Your Contact">
+                            <span id="error_contact" class="validate"></span>
+                        </div>
+                        <div class="form_line">
+                            <label for="Password">Password</label>
+                            <input type="password" name="password" placeholder="Your Password">
+                            <span id="error_pass" class="validate"></span>
+                        </div>
+                      
+                        <div class="form_line">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" name="con_password" placeholder="Confirm Password">
+                            <span id="error_confirmPass" class="validate"></span>
+                        </div>
+
+
+                        <div class="form_line checkbox">
+                            <input type="checkbox" value="Hide myself" name="information">
+                            <label for="horns"> The above information are correct</label>
+                            <span id="error_information" class="validate"></span>
+                        </div>
+
+                        <div class="form_button">
+                            <input type="button" value="Register" name="submit" id="click_button" onclick="formValidation()">
+                        </div>
+                      
+                          <div class="form_button">
+                            Have an account? <a href="student-login.html" class="text-decoration-none">Sign Up</a>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Student Login -->
+    </div>
+    <!-- Learning Resource body area end here -->
+
+
+
+    <!-- Copy Right Area start -->
+    <section id="copy_right_area">
+        <div class="row">
+            <div class="col-12">
+                <div class="copy_right_p">
+                    <h3> © 2022 Department ofInformation Technology (UITS)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copy Right Area end -->
+    <script src="./js/registration-validation.js"></script>
+</body>
+
+</html>
